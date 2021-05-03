@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif !important;
+  background: radial-gradient(ellipse at bottom, #398dbe, #53247c);
+}
+
+.Nova {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  width: 20%;
+  height: 20%;
+  transition: .4s linear;
+}
+.Nova:hover {
+  transform: scale(.8);
+}
+.Nova:hover {
+  background: #e5c7ff;
+  box-shadow: 0 0 10px #e5c7ff, 0 0 40px #e5c7ff, 0 0 80px #e5c7ff;
+}
+.Nova {
+  display: block;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  position: center;
+  transition: .4s linear;
+  animation: GlowingAndFloatingOriginal 3s ease-out infinite;
+}
+.Nova:hover {
+  transform: scale(.8);
+}
+@keyframes GlowingAndFloatingOriginal{
+  0%{
+      box-shadow:
+      0 0 10px 10px #ffffff,  /* inner white */
+      0 0 40px 20px #ffffff; /* middle magenta */
+  }
+  50%{
+      box-shadow:
+      0 0 15px 15px #ffffff,  /* inner white */
+      0 0 60px 40px #ffffff; /* middle magenta */
+  }
+  100%{
+      box-shadow:
+      0 0 10px 10px #ffffff,  /* inner white */
+      0 0 40px 20px #ffffff; /* middle magenta */
+  }
+}
+
+.Header {
+  text-align: center;
+  opacity: 0;
+  color: white;
+  animation: FadeIn 2s forwards ease-in;
+  text-shadow: 0 0 10px #00D6FD, 0 0 40px #00D6FD, 0 0 80px #00D6FD;
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+
+.main-header {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-header p {
+  opacity: 0;
+  font-size: 2rem;
+  color: white;
+  animation: FadeIn 1s forwards ease-in;
+  animation-delay: 1s;
+  text-shadow: 0 0 10px #00D6FD, 0 0 40px #00D6FD, 0 0 80px #00D6FD;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+  border-radius: 5%;
+  animation: FadeIn 0.5s forwards ease-in;
+  animation-delay: 2s;
+}
+.card:first-child {
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+  border-radius: 5%;
+  animation: FadeIn 0.5s forwards ease-in;
+  animation-delay: 1.5s;
+}
+.card:last-child {
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+  border-radius: 5%;
+  animation: FadeIn 0.5s forwards ease-in;
+  animation-delay: 2.5s;
+}
+
+.card h3 {
+  margin-bottom: 2rem;
+}
+
+.card > div {
+  padding: 2rem;
+}
+
+.card:nth-child(even) img {
+  order: 2;
+}
+
+@keyframes FadeIn {
+  0% {
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+.btn {
+  position: none;
+  padding: 10px;
+  opacity: 50%;
+  color: #00D6FD;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 50px;
+  cursor: pointer;
+  letter-spacing: 7px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.Invite {
+  transition: 0.2s;
+}
+.Invite:hover {
+  opacity: 1;
+  color: white;
+  text-shadow: 0 0 10px #e5c7ff, 0 0 40px #e5c7ff, 0 0 80px #e5c7ff;
+}
+.Discord {
+  transition: 0.2s;
+}
+.Discord:hover {
+  opacity: 1;
+  color: white;
+  text-shadow: 0 0 10px #e5c7ff, 0 0 40px #e5c7ff, 0 0 80px #e5c7ff;
+}
+
+@media(max-width:600px) {
+  .card {
+    display: block;
+  }
+}
