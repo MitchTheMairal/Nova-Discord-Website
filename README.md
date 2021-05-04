@@ -9,5 +9,7 @@ Character/OC Creator
 * List OCs; Shows all of your OCs
 * Search OCs; Search one of your OCs
 * Talk as your OCs.
-- - -
+## Information
+Website: https://nova-oc.web.app/
+<br>
 Creator: Intense/Rune#1148
